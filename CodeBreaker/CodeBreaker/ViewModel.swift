@@ -19,16 +19,39 @@ class ViewModel {
     
     var theChosen6powerballs: [Powerball] = []
     
+    func generateWhitePowerballPool() -> [Int] {
+        var pool: [Int] = []
+        for num in 0..<70 {
+            pool.append(num + 1)
+        }
+        return pool
+    }
     
+    func generateGoldPowerballPool() -> [Int] {
+        var pool: [Int] = []
+        for num in 0..<25 {
+            pool.append(num + 1)
+        }
+        return pool
+    }
     
     func assignPowerballs() {
+        theChosen6powerballs = []
+        var poolOfWhiteBalls = generateWhitePowerballPool()
+        var poolOfGoldBalls = generateGoldPowerballPool()
         for num in 0...5 {
-            var previouslyPickedNumbers: [Int] = []
-            let maxNum = (num >= 0 && num < 5) ? 70 : 25
-            let currentColor = (num >= 0 && num < 5) ? PowerballColor.white : PowerballColor.gold
-            let randomNumber = Int.random(in: 1...maxNum)
-            previouslyPickedNumbers.append(randomNumber)
-            let powerball = Powerball(number: randomNumber, color: currentColor)
+            var powerball = Powerball(number: -1, color: .outOfTheOrdinary)
+            if num >= 0 && num < 5 {
+                let randomPosition = Int.random(in: 0..<poolOfWhiteBalls.count)
+                let chosenNumber = poolOfWhiteBalls[randomPosition]
+                powerball = Powerball(number: chosenNumber, color: .white)
+                poolOfWhiteBalls.remove(at: randomPosition)
+            } else {
+                let randomPosition = Int.random(in: 0..<poolOfGoldBalls.count)
+                let chosenNumber = poolOfGoldBalls[randomPosition]
+                powerball = Powerball(number: chosenNumber, color: .gold)
+                poolOfGoldBalls.remove(at: randomPosition)
+            }
             theChosen6powerballs.append(powerball)
         }
         printTheChosenPowerballs()
