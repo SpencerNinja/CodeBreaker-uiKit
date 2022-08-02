@@ -19,7 +19,7 @@ class CiphersViewModel {
         "u": 20,    "v": 21,    "w": 22,    "x": 23,    "y": 24,
         "z": 25
     ]
-    var shiftedAlphabet: String = "abcdefghijklmnopqrstuvwxyz"
+    var shiftedAlphabet: [String] = Array(arrayLiteral: "abcdefghijklmnopqrstuvwxyz")
     
     let caesarShiftValue: Int = 3
     var wordToEncode: String = "hello"
@@ -33,6 +33,19 @@ class CiphersViewModel {
             // find the numerical value of the letter in the dictionary
             // add the caesarShiftValue to that value and find the letter at that index in the shiftedAlphabet
             // append that value to the encodedString
-    
+    func shiftAlphabet() {
+        for _ in 0..<caesarShiftValue {
+            shiftedAlphabet.append( shiftedAlphabet.removeFirst() )
+        }
+    }
+    func encodeWordWithCaesarShift() {
+        shiftAlphabet()
+        for letter in wordToEncode {
+            let shiftedIndex = (dictOfAlphabet[String(letter)] ?? 0) + caesarShiftValue
+            // TODO: Need to figure out how to start at beginning of shiftedAlphabet if index reaches the end of the array
+            let encodedLetter = shiftedAlphabet[shiftedIndex]
+            encodedWord.append(encodedLetter)
+        }
+    }
     
 }
