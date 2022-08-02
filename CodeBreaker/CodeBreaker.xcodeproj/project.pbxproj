@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B393F8A2899739300B54B09 /* CiphersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B393F892899739300B54B09 /* CiphersViewModel.swift */; };
 		0B6182332895D05E00EA1E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182322895D05E00EA1E7C /* AppDelegate.swift */; };
 		0B6182352895D05E00EA1E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182342895D05E00EA1E7C /* SceneDelegate.swift */; };
 		0B6182372895D05E00EA1E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182362895D05E00EA1E7C /* ViewController.swift */; };
@@ -16,7 +17,7 @@
 		0B61824A2895D06000EA1E7C /* CodeBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182492895D06000EA1E7C /* CodeBreakerTests.swift */; };
 		0B6182542895D06000EA1E7C /* CodeBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182532895D06000EA1E7C /* CodeBreakerUITests.swift */; };
 		0B6182562895D06000EA1E7C /* CodeBreakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182552895D06000EA1E7C /* CodeBreakerUITestsLaunchTests.swift */; };
-		0B6182682895D10000EA1E7C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182672895D10000EA1E7C /* ViewModel.swift */; };
+		0B6182682895D10000EA1E7C /* PowerballViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182672895D10000EA1E7C /* PowerballViewModel.swift */; };
 		0B61826A2895D2E200EA1E7C /* Powerball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6182692895D2E200EA1E7C /* Powerball.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B393F892899739300B54B09 /* CiphersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiphersViewModel.swift; sourceTree = "<group>"; };
 		0B61822F2895D05E00EA1E7C /* CodeBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6182322895D05E00EA1E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B6182342895D05E00EA1E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +53,7 @@
 		0B61824F2895D06000EA1E7C /* CodeBreakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeBreakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6182532895D06000EA1E7C /* CodeBreakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBreakerUITests.swift; sourceTree = "<group>"; };
 		0B6182552895D06000EA1E7C /* CodeBreakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBreakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0B6182672895D10000EA1E7C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0B6182672895D10000EA1E7C /* PowerballViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerballViewModel.swift; sourceTree = "<group>"; };
 		0B6182692895D2E200EA1E7C /* Powerball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Powerball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +152,8 @@
 		0B6182642895D08400EA1E7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0B6182672895D10000EA1E7C /* ViewModel.swift */,
+				0B6182672895D10000EA1E7C /* PowerballViewModel.swift */,
+				0B393F892899739300B54B09 /* CiphersViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -306,7 +309,8 @@
 			files = (
 				0B6182372895D05E00EA1E7C /* ViewController.swift in Sources */,
 				0B6182332895D05E00EA1E7C /* AppDelegate.swift in Sources */,
-				0B6182682895D10000EA1E7C /* ViewModel.swift in Sources */,
+				0B6182682895D10000EA1E7C /* PowerballViewModel.swift in Sources */,
+				0B393F8A2899739300B54B09 /* CiphersViewModel.swift in Sources */,
 				0B61826A2895D2E200EA1E7C /* Powerball.swift in Sources */,
 				0B6182352895D05E00EA1E7C /* SceneDelegate.swift in Sources */,
 			);

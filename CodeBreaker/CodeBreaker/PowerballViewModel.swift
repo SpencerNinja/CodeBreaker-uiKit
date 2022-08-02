@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ViewModel {
+class PowerballViewModel {
     
     /**
      Lottery ball number generator

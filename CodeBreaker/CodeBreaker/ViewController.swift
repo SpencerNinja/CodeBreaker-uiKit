@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var viemModel = ViewModel()
+    var viemModel = PowerballViewModel()
     
     @IBOutlet weak var ball1Label: UILabel!
     @IBOutlet weak var ball2Label: UILabel!
